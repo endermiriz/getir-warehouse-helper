@@ -1,0 +1,18 @@
+{
+    "name": "Getir Warehouse Helper",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "icons": {
+        "128": "icon128.png"
+      },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+      ],
+    "background": {
+        "service_worker": "background.js"
+      },
+    "action": {}
+}
