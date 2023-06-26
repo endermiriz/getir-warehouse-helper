@@ -1,1 +1,3 @@
 # getir-warehouse-helper
+
+This repository is a helper software called "Getir Warehouse Helper" developed as a "Chrome Extension" to enable faster delivery for restaurant food orders and grocery items through the mobile application "Getir" which provides delivery services. It specifically focuses on enhancing the efficiency of "Getir Warehouses" and the corresponding "Delivery Dashboards" used by warehouse employees.
