@@ -1,6 +1,6 @@
 
 var audio = new Audio("https://cdn.freesound.org/previews/658/658264_6142149-lq.mp3");
-var timeraudio = new Audio("https://cdn.freesound.org/previews/387/387533_3829977-lq.mp3")
+var timeraudio = new Audio("https://cdn.freesound.org/previews/528/528866_7614679-lq.mp3")
 chrome.runtime.onMessage.addListener(gotMessage);
 function gotMessage(message,sender,sendResponse){
     alert("Getir Warehouse Helper is Working!")
@@ -14,13 +14,13 @@ function gotMessage(message,sender,sendResponse){
                 var changeTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
                 const currentTime = new Date();
-                const fivesecTime = new Date(currentTime.getTime() + 5000);
+                const fivesecTime = new Date(currentTime.getTime() + 7000);
                 const alertTime = fivesecTime.getHours() + ":" + fivesecTime.getMinutes() + ":" + fivesecTime.getSeconds();
 
                 console.log(`Changed data: ${changedData} from ${OldData}, time: ${changeTime} alert time: ${alertTime}`);
                 if (changedData > OldData) {
                     audio.play();
-                    const delay = 5000;
+                    const delay = 7000;
                     setTimeout(() => {
                         const ordernumtimed = document.querySelector("#root > div > div.layout--M4fKj > div.ant-row.ant-row-top > div.ant-col.ant-col-xs-24.ant-col-md-18.ant-col-xl-20 > div > div.ant-row > div.ant-col.ant-col-xs-24.ant-col-md-20 > div > div:nth-child(4) > div > div > div:nth-child(1) > span")
                         if(ordernum === ordernumtimed){
